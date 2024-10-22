@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1589383989 source:c:\users\hector\desktop\programacion\recibir\main.c
+	"pcap.h"
+
+1589392414 source:c:\users\msabe\desktop\universidad\asignaturasdeprogramacion\redes_practica_c\ejerciciostarjetadered\recibir\main.c
+	"pcap.h"
+
+1589393183 source:c:\users\msabe\desktop\universidad\asignaturasdeprogramacion\redes_practica_c\ejerciciostarjetadered\practica_redes_parte_2_recibir_mensajes\main.c
+	"pcap.h"
+

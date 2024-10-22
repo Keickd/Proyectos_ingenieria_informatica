@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1588682935 source:c:\users\hector\desktop\programacion\practica_programacion_redes\main.cpp
+	<iostream>
+	"pcap.h"
+
+1589202528 source:c:\users\hector\desktop\programacion\practica_programacion_redes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pcap.h>
+
+1589363709 source:c:\users\msabe\desktop\universidad\asignaturasdeprogramacion\redes_practica_c\ejerciciostarjetadered\practica_redes_parte_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pcap.h>
+
+1589966687 source:c:\users\msabe\desktop\universidad\asignaturasdeprogramacion\redes_practica_c\ejerciciostarjetadered\practica_redes_parte_1_enviar_mensajes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pcap.h>
+

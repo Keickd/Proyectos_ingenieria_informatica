@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558356762 source:c:\users\msabe\desktop\universidad\programacion\lenguaje_c\practicas\iteracion03\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
