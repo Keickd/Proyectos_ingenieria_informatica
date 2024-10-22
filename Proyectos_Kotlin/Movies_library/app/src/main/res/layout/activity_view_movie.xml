@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:maxLines="5"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Guardians of the Galaxy"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCover"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDirector"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:maxLines="3"
+                android:paddingLeft="9dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="8dp"
+                android:text="Director: James Gunn"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCover"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="139dp"
+                android:layout_height="192dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="3dp"
+                android:paddingRight="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/no_image" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text="Year: 2014"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/ivCover"
+                app:layout_constraintTop_toBottomOf="@+id/tvDirector" />
+
+            <TextView
+                android:id="@+id/tvRuntime"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:text="Length: 121 "
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvYear"
+                app:layout_constraintTop_toBottomOf="@+id/tvDirector" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text="Rating: 8.1"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/ivCover"
+                app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:text="Id: 1"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvRating"
+                app:layout_constraintTop_toBottomOf="@+id/tvRuntime" />
+
+            <TextView
+                android:id="@+id/tvVotes"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text="Votes: 757074"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/ivCover"
+                app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+            <TextView
+                android:id="@+id/tvRevenue"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:text="Revenue: 333.13"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvVotes"
+                app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+            <TextView
+                android:id="@+id/tvDescriptionName"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="13dp"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnFavoriteEditMovie"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCover" />
+
+            <ImageButton
+                android:id="@+id/ibtnFavoriteEditMovie"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingRight="7dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRevenue"
+                app:srcCompat="@drawable/ic_favorite_empty" />
+
+            <TextView
+                android:id="@+id/tvDescriptionContent"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="8dp"
+                android:maxLines="8"
+                android:paddingLeft="14dp"
+                android:text="A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.\n"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionName"
+                app:layout_constraintVertical_bias="0.007" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="13dp"
+                android:text="Actors"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionContent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="384dp"
+                android:layout_height="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:srcCompat="@drawable/blackline" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMoviesFromActorsViewMovie"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:text="Genres"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMoviesFromActorsViewMovie" />
+
+            <ImageView
+                android:id="@+id/imgview5"
+                android:layout_width="384dp"
+                android:layout_height="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:srcCompat="@drawable/blackline" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMoviesFromGenresViewMovie"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.407"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgview5"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

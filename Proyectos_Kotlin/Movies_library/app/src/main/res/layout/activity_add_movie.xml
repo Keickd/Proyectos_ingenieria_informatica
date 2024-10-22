@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etTitleAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:hint="Title: "
+                android:maxLines="5"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCoverAddMovie"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etDirectorAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:maxLines="3"
+                android:paddingLeft="9dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="8dp"
+                android:text=""
+                android:hint="Director: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCoverAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etTitleAddMovie" />
+
+            <ImageView
+                android:id="@+id/ivCoverAddMovie"
+                android:layout_width="134dp"
+                android:layout_height="204dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="6dp"
+                android:paddingRight="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/no_image"
+                tools:srcCompat="@drawable/no_image" />
+
+            <EditText
+                android:id="@+id/etYearAddMovie"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text=""
+                android:inputType="number"
+                android:hint="Year: "
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/ivCoverAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etDirectorAddMovie" />
+
+            <EditText
+                android:id="@+id/etRuntimeAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:maxLines="2"
+                android:paddingLeft="3dp"
+                android:hint="Length: "
+                android:inputType="number"
+                android:paddingRight="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etYearAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etDirectorAddMovie" />
+
+            <EditText
+                android:id="@+id/etRatingAddMovie"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text=""
+                android:hint="Rating: "
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/ivCoverAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etYearAddMovie" />
+
+            <EditText
+                android:id="@+id/etIdAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text="Id: 1"
+                android:editable="false"
+                android:clickable="false"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etRatingAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etRuntimeAddMovie" />
+
+            <EditText
+                android:id="@+id/etVotesAddMovie"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:paddingLeft="7dp"
+                android:text=""
+                android:hint="Votes: "
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/ivCoverAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etRatingAddMovie" />
+
+            <EditText
+                android:id="@+id/etRevenueAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="Revenue: "
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etVotesAddMovie"
+                app:layout_constraintTop_toBottomOf="@+id/etIdAddMovie" />
+
+            <TextView
+                android:id="@+id/tvDescriptionName"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="13dp"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCoverAddMovie" />
+
+            <EditText
+                android:id="@+id/etDescriptionContentAddMovie"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="8dp"
+                android:hint="Description: "
+                android:maxLines="8"
+                android:paddingLeft="12dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="13dp"
+                android:text="Actors"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDescriptionContentAddMovie" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="384dp"
+                android:layout_height="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:srcCompat="@drawable/blackline" />
+
+            <EditText
+                android:id="@+id/etActorsListAddMovie"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Enter actors with ','"
+                android:inputType="text"
+                android:layout_width="350dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                android:scrollbars="vertical"
+                android:textSize="16dp" />
+
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:text="Genres"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etActorsListAddMovie" />
+
+            <ImageView
+                android:id="@+id/imgview5"
+                android:layout_width="384dp"
+                android:layout_height="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:srcCompat="@drawable/blackline" />
+
+            <EditText
+                android:id="@+id/etGenresListAddMovie"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Enter genres with ','"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:inputType="text"
+                android:scrollbars="vertical"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.407"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgview5"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <Button
+                android:id="@+id/btnCreateMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etGenresListAddMovie"
+                app:layout_constraintVertical_bias="0.063" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
